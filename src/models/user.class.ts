@@ -6,6 +6,7 @@ export class User{
     street:string;
     zipCode:number;
     city:string;
+    email:string
 
     constructor(obj?:any){
 

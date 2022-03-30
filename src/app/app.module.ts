@@ -18,11 +18,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
-// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -47,6 +47,9 @@ import { AngularFireModule } from '@angular/fire/compat';
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatProgressBarModule,
+    MatCardModule,
+    MatTableModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
