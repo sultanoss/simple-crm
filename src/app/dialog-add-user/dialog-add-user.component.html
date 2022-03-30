@@ -56,9 +56,17 @@
 
     </div>
 
+    <div>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>E-Mail</mat-label>
+            <input [disabled]="loading" [(ngModel)]="user.email" matInput placeholder="Placeholder">
+            <!-- <mat-hint>Please enter your name</mat-hint> -->
+        </mat-form-field>
+    </div>
+
 </div>
 <div mat-dialog-actions>
-    <button [disabled]="loading" mat-button>cancel</button>
+    <button [disabled]="loading" mat-button (click)="this.dialogRef.close()">cancel</button>
     <button [disabled]="loading" mat-button [mat-dialog-close]="" cdkFocusInitial (click)="saveUser()">save</button>
 </div>
 

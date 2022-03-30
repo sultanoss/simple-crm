@@ -23,6 +23,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 
@@ -31,7 +32,8 @@ import {MatTableModule} from '@angular/material/table';
     AppComponent,
     DashboardComponent,
     UserComponent,
-    DialogAddUserComponent
+    DialogAddUserComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
