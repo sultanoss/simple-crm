@@ -1,16 +1,26 @@
 <mat-card class="user-details-header">
+    <button mat-icon-button class="user-details-pin" [matMenuTriggerFor]="UserMenu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #UserMenu="matMenu">
+        <button mat-menu-item (click)="editUserMenu()">Edit</button>
+    </mat-menu>
     <img src="assets/img/winkboy.svg">
     <div class="user-details">
-        <h2>Jamal Sultan</h2>
-        <span>email@email.de</span>
+        <h2>{{ currentUser.firstName }} {{ currentUser.lastName }}</h2>
+        <span>{{ currentUser.email }}</span>
     </div>
 </mat-card>
 
 <mat-card class="mt-32px">
-    
-        <mat-card-title>Address</mat-card-title>
-
-      <mat-card-content>
-          musterstr.3 <br> 12345 musterstadt
-      </mat-card-content>
+    <button mat-icon-button class="user-details-pin" [matMenuTriggerFor]="addressMenu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #addressMenu="matMenu">
+        <button mat-menu-item (click)="editAdressMenu()">Edit</button>
+    </mat-menu>
+    <mat-card-title>Adress</mat-card-title>
+    <mat-card-content>
+        <span>{{ currentUser.street }}</span> <br> <span>{{ currentUser.zipCode }}</span>
+    </mat-card-content>
 </mat-card>
