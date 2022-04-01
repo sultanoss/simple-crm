@@ -1,14 +1,14 @@
 {
   "targets": {
-    "simple-crm-ac261": {
+    "simplecrm2-963cd": {
       "hosting": {
         "simple-crm": [
-          "simple-crm-ac261"
+          "simplecrm2-963cd"
         ]
       }
     }
   },
   "projects": {
-    "default": "simple-crm-ac261"
+    "default": "simplecrm2-963cd"
   }
 }

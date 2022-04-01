@@ -27,6 +27,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { DialogEditAdressComponent } from './dialog-edit-adress/dialog-edit-adress.component';
 import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 
 
@@ -60,6 +62,8 @@ import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.com
     MatMenuModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
 
   providers: [],

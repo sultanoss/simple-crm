@@ -41,8 +41,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "4mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -112,8 +112,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "simple-crm:build:production",
-            "firebaseProject": "simple-crm-ac261",
-            "firebaseHostingSite": "simple-crm-ac261"
+            "firebaseProject": "simplecrm2-963cd",
+            "firebaseHostingSite": "simplecrm2-963cd"
           }
         }
       }
